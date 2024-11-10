@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Peserta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="button"] {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="button"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Formulir Pendaftaran SMKN 1 GLAGAH</h2>
+    </header>
+    <main>
+        <form action="submit" name="registrasi" method="post">
+            <label for="nama lengkap">Nama Lengkap</label>
+            <input type="text" name="nama lengkap" id="nama lengkap" required>
+
+            <label for="tgl lahir">Tanggal Lahir</label>
+            <input type="date" id="tgllahir" name="tgllahir" required>
+            <label for="jenis kelamin">Jenis Kelamin</label>
+            <select name="jenis kelamin" id="jenis kelamin">
+                <option value="L">Laki-laki</option>
+                <option value="P">Perempuan</option>
+            </select>
+            
+            <label for="asal sekolah">Asal Sekolah</label>
+            <select name="asal sekolah" id="asal sekolah" required>
+                <option value="1">SMPN 1 BANYUWANGI</option>
+                <option value="2">SMPN 2 BANYUWANGI</option>
+                <option value="3">MTSN 1 BANYUWANGI</option>
+                <option value="4">SMPN 1 GIRI</option>
+                <option value="5">SMPN 1 GLAGAH</option>
+                <option value="5">SMPN 3 BANYUWANGI</option>
+                <option value="5">SMPN 4 BANYUWANGI</option>
+                <option value="5">SMPN 5 BANYUWANGI</option>
+            </select>
+
+            <label for="alamat">Alamat</label>
+            <textarea cols="25" rows="4" name="alamat" id="alamat" required></textarea>
+
+            <label for="telpon">No. Telepon</label>
+            <input type="text" name="telpon" id="telpon">
+
+            <label for="nama orangtua">Nama Orang Tua</label>
+            <input type="text" name="nama orangtua" id="nama orangtua">
+
+            <label for="pekerjaan orangtua">Pekerjaan Orang Tua</label>
+            <input type="text" name="Pekerjaan orangtua" id="Pekerjaan orangtua">
+
+            <label for="program kursus">Program Kursus</label>
+            <input type="text" name="program kursus" id="program kursus">
+
+            <h2><label for="hari kursus">Hari Kursus</label></h2>
+            <input type="checkbox" name="hari kursus" id="hari kursus">
+                <option value="1">Senin & Kamis</option>
+           
+            <input type="checkbox" name="hari kursus" id="hari kursus">
+                <option value="2">Selasa & Jumat</option>
+           
+            <input type="checkbox" name="hari kursus" id="hari kursus">
+                <option value="3">Rabu & Sabtu</option>
+
+            <h2><label for="waktu kursus">Waktu Kursus</label></h2>
+            <input type="checkbox" name="waktu kursus" id="waktu kursus">
+                 <option value="1">14.00-15.30</option>
+
+            <input type="checkbox" name="waktu kursus" id="waktu kursus">
+                 <option value="2">16.00-17.30</option>
+
+            <input type="checkbox" name="waktu kursus" id="waktu kursus">
+                 <option value="3">19.00-20.30</option>
+           
+</body>
+</html>
