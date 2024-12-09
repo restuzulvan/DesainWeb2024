@@ -1,0 +1,12 @@
+        p{
+            color: rgb(19, 94, 192);
+            text-align: justify;
+        }
+        a{
+            color: red;
+        }
+        footer,header{
+            background-color: rgb(233, 230, 232);
+            font-size: 25px;
+            font-style: inherit;
+        }
