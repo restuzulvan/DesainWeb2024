@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, blue, white);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  button {
+    background-color: #ffffff;
+    color: #2575fc;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    background-color: blue;
+    color: white;
+  }
+  
+  .animated-button {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
